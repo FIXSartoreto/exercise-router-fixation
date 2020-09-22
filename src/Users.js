@@ -1,9 +1,11 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 
-const Users = () => (
+const Users = ({ greetingMessage = 'Hi There' }) => (
   <div>
     <h2> Users </h2>
-    <p> My awesome Users component </p>
+    <p> {greetingMessage}, this is my awesome Users component </p>
+    <Link to="/" >Back to Home </Link>
   </div>
 );
 
